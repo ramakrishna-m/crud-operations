@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table border="1" align="center">
+    <tr>
+        <th>Name</th>
+        <th>MOBILE</th>
+        <th>EMAIL</th>
+        <th>Gender</th>
+        <th>City</th>
+        <th>State</th>
+    </tr>32
+    {% for rec in data  %}
+    <tr>
+        <td>{{ rec.Name }}</td>
+        <td>{{ rec.Mobile}}</td>
+        <td>{{ rec.Email}}</td>
+        <td>{{ rec.Gender }}</td>
+        <td>{{ rec.City }}</td>
+        <td>{{ rec.State }}</td>
+    </tr>
+    {% endfor %}
+</table><br><br>
+<div align="center">
+<b><a href="/krishna/reg"><button>Add another</button></a></b><br><br>
+<b><a href="/krishna/delete"><button>delete record</button></a></b>
+</div>
+</body>
+</html>
