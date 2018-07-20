@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>reg</title>
+</head>
+<body>
+<div>
+<form align="center" action="" method="POST">
+    {% csrf_token %}
+
+        <table align="center">
+            <tr>{{ form }}</tr>
+
+        </table><br>
+              <input type="submit"></input>
+
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table border="1" align="center">
+    <tr>
+        <th>Name</th>
+        <th>MOBILE</th>
+        <th>EMAIL</th>
+        <th>Gender</th>
+        <th>City</th>
+        <th>State</th>
+    </tr>
+    {% for rec in data  %}
+    <tr>
+        <td>{{ rec.Name }}</td>
+        <td>{{ rec.Mobile}}</td>
+        <td>{{ rec.Email}}</td>
+        <td>{{ rec.Gender }}</td>
+        <td>{{ rec.City }}</td>
+        <td>{{ rec.State }}</td>
+    </tr>
+    {% endfor %}
+</table><br><br>
+<div align="right">
+<b><a href="/"><button>logout</button></a></b><br><br>
+</div>
+</body>
+</html>

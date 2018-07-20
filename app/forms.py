@@ -15,3 +15,4 @@ class deleteform(forms.ModelForm):
     class Meta:
         model = delete
         fields = ['Email']
+
